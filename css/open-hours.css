@@ -1,0 +1,150 @@
+.open-hours {
+    padding: 0 10%;
+    margin-bottom: 3rem;
+}
+.openhours-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.openhours-textcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.open-hours-title {
+    font-size: 32px;
+    color: var(--black);
+}
+.open-hours-undertitle {
+    font-size: 24px;
+    color: rgba(77, 75, 75, 0.686);
+    margin-top: 25px;
+    position: relative;
+    right: 16px;
+}
+.open-hours-time {
+    font-size: 24px;
+    color: var(--blue);
+    margin-top: 10px;
+}
+.open-hours-img {
+    width: 50%;
+    height: auto;
+}
+.open-hour-decoration {
+    font-size: 20px;
+    animation: open-hour-decoration 10s linear 0ms infinite alternate-reverse forwards;
+    color: var(--black);
+}
+@keyframes open-hour-decoration {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@media (max-width: 600px) {
+    .open-hours-undertitle {
+        font-size: 19px;
+    }
+    .open-hours-time {
+        font-size: 19px;
+    }
+    .open-hours-title {
+        font-size: 24px;
+        color: var(--black);
+    }
+}
+@media (max-width: 450px) {
+    .openhours-main-container {
+        flex-direction: column;
+        padding: 2.5rem 0;
+    }
+}
+
+
+/*RESPONSIVE OPENHOURS*/
+@media (max-width: 1246px) {
+    .open-hours-1245 {
+        display: none;
+    }
+}
+@media (max-width: 1150px) {
+    .open-hours-1150 {
+        display: none;
+    }
+}
+@media (max-width: 1002px) {
+    .open-hours-1002 {
+        display: none;
+    }
+}
+@media (max-width: 855px) {
+    .open-hours-855 {
+        display: none;
+    }
+}
+@media (max-width: 706px) {
+    .open-hours-706 {
+        display: none;
+    }
+}
+@media (max-width: 552px) {
+    .open-hours-552 {
+        display: none;
+    }
+}
+@media (max-width: 405px) {
+    .open-hours-405 {
+        display: none;
+    }
+}
+@media (max-width: 360px) {
+    .open-hours-360 {
+        display: none;
+    }
+}
