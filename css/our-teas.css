@@ -1,0 +1,148 @@
+.our-tea {
+    min-height: 100vh;
+    padding: 7rem 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.our-teas-bottom-img {
+    position: absolute;
+    right: -15rem;
+    bottom: 15rem;
+    z-index: 2;
+    width: 30%;
+    transform: rotate(35deg);
+}
+
+.our-teas-up-img {
+    position: absolute;
+    left: -2rem;
+    bottom: 80rem;
+    z-index: 2;
+    transform: rotate(55deg);
+    width: 20%;
+}
+.ourtea-img4 {
+    width: 60%;
+}
+
+.our-teas-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+.our-teas-brand:last-child {
+    margin-bottom: 0;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.row-reverse .img {
+    display: flex;
+    justify-content: flex-end;
+}
+.our-teas-brand h2 {
+    font-size: 60px;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+.our-teas-text {
+    flex: 1;
+}
+.our-teas-brand .img {
+    flex: 1;
+}
+.our-teas-brand img {
+    height: 15rem;
+}
+
+@media (max-width: 1100px) {
+    .our-teas-bottom-img {
+        right: -10rem;
+        bottom: 19rem;
+    }
+    .our-teas-up-img {
+        width: 30%;
+    }
+}
+@media (max-width: 846px) {
+    .our-teas-bottom-img {
+        right: -9rem;
+        width: 40%;
+    }
+    .our-teas-up-img {
+        bottom: 85rem;
+    }
+    .our-teas-brand img {
+        height: 9rem;
+    }
+}
+@media (max-width: 750px) {
+    .our-teas-brand{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5rem;
+      }
+      .our-teas-brand h2{
+        font-size: 25px;
+      }
+      .our-teas-brand img{
+        height: 9rem;
+        margin-bottom: 2rem;
+        width: auto;
+      }
+      .our-teas-up-img {
+        bottom: 90rem;
+    }
+      .our-teas-brand .our-teas-bottom-img{
+        right: -17rem;
+        bottom: -9rem;
+      }
+}
+
+@media (max-width: 765px) {
+    .our-teas-up-img {
+        bottom: 90rem;
+    }
+}
+@media (max-width: 600px) {
+    .our-teas-bottom-img {
+        right: -8rem;
+        width: 50%;
+    }
+    .our-teas-up-img {
+        bottom: 100rem;
+        width: 40%;
+    }
+    .our-teas-brand img{
+        height: 8rem;
+      }
+}
+@media (max-width: 470px) {
+    .our-teas-bottom-img {
+        right: -7rem;
+        width: 60%;
+    }
+    .our-teas-up-img {
+        width: 50%;
+    }
+    .our-teas-brand img{
+        height: 6.5rem;
+      }
+}
+@media (max-width: 400px) {
+    .our-teas-up-img {
+        bottom: 110rem;
+    }
+}
+@media (max-width: 365px) {
+    .our-teas-up-img {
+        bottom: 115rem;
+    }
+}
+@media (max-width: 330px) {
+    .our-teas-up-img {
+        bottom: 120rem;
+    }
+}

@@ -36,57 +36,56 @@
     width: 50%;
     height: auto;
 }
-.open-hour-decoration {
+
+.open-hours-open {
     font-size: 20px;
-    animation: open-hour-decoration 10s linear 0ms infinite alternate-reverse forwards;
-    color: var(--black);
 }
-@keyframes open-hour-decoration {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 1;
-		transform: translateX(48px);
-	}
 
-	24% {
-		opacity: 1;
-	}
-
-	40% {
-		animation-timing-function: ease-in;
-		transform: translateX(26px);
-	}
-
-	65% {
-		animation-timing-function: ease-in;
-		transform: translateX(13px);
-	}
-
-	82% {
-		animation-timing-function: ease-in;
-		transform: translateX(6.5px);
-	}
-
-	93% {
-		animation-timing-function: ease-in;
-		transform: translateX(4px);
-	}
-
-	25%,
-	55%,
-	75%,
-	87%,
-	98% {
-		animation-timing-function: ease-out;
-		transform: translateX(0px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateX(0px);
-	}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
+
+.openhour {
+    overflow: hidden;
+    padding: 10px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+.openhour::before,
+.openhour::after {
+    position: absolute;
+    top: 0;
+
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.openhour::before {
+    left: 0;
+    background: linear-gradient(to left,rgba(255,255,255,0),white);
+}
+.openhour::after {
+    right: 0;
+    background: linear-gradient(to right,rgba(255,255,255,0),white);
+}
+
+
+.openhour-slide {
+    white-space: nowrap;
+    animation: 35s slide infinite linear;
+    display: inline-block;
+}
+
+
+
+
 @media (max-width: 600px) {
     .open-hours-undertitle {
         font-size: 19px;
